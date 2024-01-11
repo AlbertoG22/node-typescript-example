@@ -9,5 +9,5 @@ export const createTodo: RequestHandler = (req, res, next) => {
 
     TODOS.push(newTodo);
 
-    res.status(200).json({ message: 'Todo created!', createdTodo: newTodo});
+    res.status(201).json({ message: 'Todo created!', createdTodo: newTodo});
 };
